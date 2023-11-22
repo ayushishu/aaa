@@ -26,7 +26,7 @@
           # Checkout the code repository
 
         - name: Run Test
-          uses: ayushishu/releng-docker/.github/action/composite-csit-1-node@ayush
+          uses: askb/releng-docker/.github/action/composite-csit-1-node@main
           with: 
             project_name: aaa
             DOCKER_REPOSITORY: ayushishu
