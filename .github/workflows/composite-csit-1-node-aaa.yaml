@@ -29,6 +29,6 @@
           uses: askb/releng-docker/.github/action/composite-csit-1-node@main
           with: 
             project_name: aaa
-            DOCKER_REPOSITORY: ayushishu
-            ROBOT_IMAGE: robot-base-image
+            DOCKER_REPOSITORY: ${{ vars.DOCKER_REPOSITORY }}
+            ROBOT_IMAGE: ${{ vars.ROBOT_IMAGE }}
             
