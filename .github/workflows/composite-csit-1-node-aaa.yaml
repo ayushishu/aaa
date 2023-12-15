@@ -1,4 +1,4 @@
-  name: CSIT-1-Node-Test
+  name: AAA-CSIT-1-Node-authn-all
   
   on:
     push:
@@ -24,11 +24,10 @@
         - name: Checkout repository
           uses: actions/checkout@v3
           # Checkout the code repository
-
+​
         - name: Run Test
           uses: askb/releng-docker/.github/action/composite-csit-1-node@main
           with: 
             project_name: aaa
             DOCKER_REPOSITORY: ${{ vars.DOCKER_REPOSITORY }}
             ROBOT_IMAGE: ${{ vars.ROBOT_IMAGE }}
-            
