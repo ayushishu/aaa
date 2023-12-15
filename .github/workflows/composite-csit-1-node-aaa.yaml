@@ -1,4 +1,4 @@
-  name: CSIT-1-Node-Test
+  name: AAA-CSIT-1-Node-authn-all
   
   on:
     push:
